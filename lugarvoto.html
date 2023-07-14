@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Gran Nicoya</title>
+
+    <?php 
+        /* require_once "padron/scripts.php" */
+        include "code/padron_css.html";
+    ?>
+
+    <meta charset="utf-8">
+    <!-- favicon -->
+    <link href="assets/img/favicon.png" rel="icon">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" type="text/css" href="lib/css/padron/bootstrap502.min.css">
+    <link rel="stylesheet" type="text/css" href="lib/css/padron/datatables.bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="lib/css/padron/dataTables.bootstrap5.min.css">
+
+    <link rel="stylesheet" type="text/css" href="lib/css/padron/alertify.css">
+    <link rel="stylesheet" type="text/css" href="lib/css/padron/alertify.bootstrap.css">
+
+    <link rel="stylesheet" type="text/css" href="lib/css/padron/fontawesome.all.css">
+    <link rel="stylesheet" type="text/css" href="lib/css/padron/fontawesome.css">
+
+    <link rel="stylesheet" type="text/css" href="lib/css/global/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="lib/css/global/main.css">
+
+    <link rel="stylesheet" type="text/css" href="lib/css/padron/padron.css">
+
+    <!-- responsive datatable -->
+    <link rel="stylesheet" type="text/css" href="lib/css/padron/jquery.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="lib/css/padron/responsive.dataTables.min.css">
+    
+</head>
+<body>
+
+    <header id="header" class="header d-flex align-items-center fixed-top">
+        <div class="container-fluid d-flex align-items-center justify-content-evenly">
+            <a href="index.html" class="logo d-flex align-items-center">
+                <h1 class="d-flex align-items-center">
+                <span class="text-success">Partido</span> &nbsp;
+                <span class="text-danger">La Gran</span> &nbsp;
+                <span class="text-success">Nicoya</span>
+                </h1>
+            </a>
+
+            <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+            <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a href="index.html" id="m1">Home</a></li>
+                    <li><a href="partido.html" id="m2">Partido</a></li>
+                    <li class="dropdown"><a href="papeleta.html" id="m3"><span>Papeleta</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                        <ul>
+                            <li><a href="papeleta.html#alcaldia">Alcaldía</a></li>
+                            <li><a href="papeleta.html#regidores">Regidores</a></li>
+                            <li><a href="papeleta.html#sindicos">Síndicos</a></li>
+                            <li class="dropdown"><a href="#"><span>Consejos de Distrito</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                                <ul>
+                                    <li><a href="#">Nicoya</a></li>
+                                    <li><a href="#">Mansión</a></li>
+                                    <li><a href="#">San Antonio</a></li>
+                                    <li><a href="#">Quebrada Honda</a></li>
+                                    <li><a href="#">Sámara</a></li>
+                                    <li><a href="#">Nosara</a></li>
+                                    <li><a href="#">Belén de Nosarita</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="lugarvoto.html" class="active" id="m4">Dónde voto?</a></li>
+                    <!-- <li><a href="calendario.php" id="m5">Calendario 2024</a></li> -->
+                    <li><a href="comite.html" id="m6">Comité Ejecutivo</a></li>
+                    <li><a href="publicaciones.html" id="m7">Publicaciones</a></li>
+                    <li><a href="contacto.html" id="m8">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main"> 
+
+        <!-- =======  ======= -->
+        <div class="breadcrumbs d-flex align-items-center" style="background-image: url('lib/img/foto_iglesia.jpg');">
+            <div class="container position-relative d-flex flex-column align-items-center">
+                <h2>Dónde voto? Elecciones Municipales 2024-2028</h2>
+                <ol>
+                <li><a href="index.html">Home</a></li>
+                <li>Dónde voto?</li>
+                </ol>
+
+            </div>
+        </div>
+    </main>
+
+    <section class="bg-danger bg-opacity-10">
+        <div>
+            <div class="container" >
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="card text-left">
+                            <div class="card-header text-center align-items-center"> <br>
+                                <h2 class="text-danger">Consulte su lugar y mesa de votación</h2>
+                                <h3 class="text-success"> Padrón Electoral provisto por el Tribunal de Elecciones</h3><br>
+                            </div>
+                            <div class="card-body">
+                                <div id="tablaDatatable"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+        <?php include "code/footer.html" ?>
+        <div class="footer-content">
+            <div class="container">
+              <div class="row gy-4">
+        
+                <div class="col-lg-5 col-md-12 footer-info">
+                  <a href="index.html" class="logo d-flex align-items-center">
+                    <span style="color: #4b853f">Partido La Gran Nicoya</span>
+                  </a>
+                  <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+                  <div class="social-links d-flex  mt-3">
+                    <a href="https://www.facebook.com/SomosLaGranNicoya" class="facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.instagram.com/plagrannicoya/" class="instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.youtube.com/@PartidoLaGranNicoya" class="youtube"><i class="bi bi-youtube"></i></a>
+                    <a href="https://www.tiktok.com/@partido_lagrannicoya" class="youtube"><i class="bi bi-tiktok"></i></a>
+                    <!-- <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a> -->
+                  </div>
+                </div>
+        
+                <div class="col-lg-2 col-6 footer-links">
+                  <h4>Enlaces</h4>
+                  <ul>
+                    <li><i class="bi bi-box-arrow-in-up-right"></i> <a href="#">&nbsp Home</a></li>
+                    <li><i class="bi bi-box-arrow-in-up-right"></i> <a href="partido.html"></a>&nbsp Partido</a></li>
+                    <li><i class="bi bi-box-arrow-in-up-right"></i> <a href="papeleta.html">&nbsp Papeleta</a></li>
+                    <li><i class="bi bi-box-arrow-in-up-right"></i> <a href="lugarvoto.html">&nbsp Dónde voto?</a></li>
+                    <li><i class="bi bi-box-arrow-in-up-right"></i> <a href="comite.html">&nbsp Comité Ejecutivo</a></li>
+                  </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+                  <h4>Contáctenos</h4>
+                  <p>
+                    Casa Club, 100 mts Oeste y 50 mts Sur<br>
+                    de la Casa Cural. Nicoya, Guanacaste<br>
+                    Costa Rica <br><br>
+                    <strong>Teléfono:</strong> +506 8888 8888<br>
+                    <strong>Correo electrónico:</strong> info@lagranicoya.cr<br>
+                  </p>
+        
+                </div>
+        
+                <!-- Google Map location -->
+                
+                <div class="col-lg-2 col-6 footer-links">
+                  <div class="mapouter">
+                    <div class="gmap_canvas">
+                      <iframe width="352" height="219" id="gmap_canvas" 
+                        src="https://maps.google.com/maps?q=casa+club+partido+la+gran+&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                      <a href="https://textcaseconvert.com/"></a><br>
+                      <style>.mapouter{position: relative;text-align: right;height: 219px;width: 352px;}</style>
+                      <a href="https://www.embedmaps.co">embed google maps api</a>
+                      <style>.gmap_canvas{overflow: hidden;background: none !important;height: 219px;width: 352px;}</style>
+                    </div>
+                  </div>
+                </div>
+        
+              </div>
+            </div>
+            
+          <div class="text-center text-secondary"">
+              <span> Desarrollado por <strong><span>Marco Moreno @ mmoreno.cr@icloud.com</span></strong>. Derechos reservados </span>
+          </div>
+          </div>
+        
+          <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-circle-fill"></i></a>
+    </footer>
+
+    <!--  JS File -->
+    <?php include "code/padron_js.html" ?>
+    <!-- JS Files -->
+    <script src="lib/js/padron/jquery-3.5.1.js"></script>
+
+    <script src="lib/js/padron/bootstrap502.bundle.min.js"></script>
+    <script src="lib/js/padron/popper.min.js"></script>
+    <script src="lib/js/padron/jquery.dataTables.min.js"></script>
+    <script src="lib/js/padron/dataTables.bootstrap5.min.js"></script>
+
+    <script src="lib/js/padron/alertify.js"></script>
+
+    <script src="lib/js/global/main.js"></script>
+
+    <!-- responsive datatable -->
+    <script src="lib/js/padron/dataTables.responsive.min.js"></script>
+    <script src="lib/js/padron/jquery-3.7.0"></script>
+
+    </body>
+</html>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('#tablaDatatable').load('lib/crud/datatable/tabla.php');
+    });
+</script>

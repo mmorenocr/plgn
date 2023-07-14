@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>La Gran Nicoya</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!--  CSS Files -->
+  <?php include "code/global_css.html" ?>
+
+  <!-- Favicons -->
+  <link href="lib/img/favicon.jpeg" rel="icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!--  CSS Files -->
+  <link href="lib/css/global/bootstrap.min.css" rel="stylesheet">
+  <link href="lib/css/global/bootstrap-icons.css" rel="stylesheet">
+  <link href="lib/css/global/aos.css" rel="stylesheet">
+  <link href="lib/css/global/glightbox.min.css" rel="stylesheet">
+  <link href="lib/css/global/swiper-bundle.min.css" rel="stylesheet">
+  <link href="lib/css/global/remixicon.css" rel="stylesheet">
+
+  <!--  Main CSS File -->
+  <link href="lib/css/global/main.css" rel="stylesheet">
+  <link href="lib/css/global/addons.css" rel="stylesheet" >
+
+</head>
+
+<body class="page-contact">
+
+   <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid d-flex align-items-center justify-content-evenly">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <h1 class="d-flex align-items-center">
+          <span class="text-success">Partido</span> &nbsp;
+          <span class="text-danger">La Gran</span> &nbsp;
+          <span class="text-success">Nicoya</span>
+        </h1>
+      </a>
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+        <li><a href="index.html" id="m1">Home</a></li>
+          <li><a href="partido.html" id="m2">Partido</a></li>
+          <li class="dropdown"><a href="papeleta.html" id="m3"><span>Papeleta</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="papeleta.html#alcaldia">Alcaldía</a></li>
+              <li><a href="papeleta.html#regidores">Regidores</a></li>
+              <li><a href="papeleta.html#sindicos">Síndicos</a></li>
+              <li class="dropdown"><a href="#"><span>Consejos de Distrito</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="#">Nicoya</a></li>
+                  <li><a href="#">Mansión</a></li>
+                  <li><a href="#">San Antonio</a></li>
+                  <li><a href="#">Quebrada Honda</a></li>
+                  <li><a href="#">Sámara</a></li>
+                  <li><a href="#">Nosara</a></li>
+                  <li><a href="#">Belén de Nosarita</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="lugarvoto.html" id="m4">Dónde voto?</a></li>
+          <!-- <li><a href="calendario.php" id="m5">Calendario 2024</a></li> -->
+          <li><a href="comite.html" id="m6">Comité Ejecutivo</a></li>
+          <li><a href="publicaciones.html" id="m7">Publicaciones</a></li>
+          <li><a href="contacto.html" class="active" id="m8">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <div class="breadcrumbs d-flex align-items-center" style="background-image: url('lib/img/foto_iglesia.jpg');">
+      <div class="container position-relative d-flex flex-column align-items-center">
+
+        <h2>Contáctenos</h2>
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li>Contacto</li>
+        </ol>
+
+      </div>
+    </div>
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container position-relative" data-aos="fade-up">
+
+        <div class="row gy-4 d-flex justify-content-end">
+
+          <div class="col-lg-5" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="info-item d-flex">
+              <i class="bi bi-geo-alt flex-shrink-0"></i>
+              <div>
+                <h4>Ubicación:</h4>
+                <p>Casa Club, 100 mts Este y 50 mts Sur de la Casa Cural <br>
+                   Nicoya, Guanacaste. Costa Rica
+                </p>
+              </div>
+            </div>
+
+            <div class="info-item d-flex">
+              <i class="bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h4>Correo electrónico:</h4>
+                <p>info@lagrannicoya.cr</p>
+              </div>
+            </div>
+
+            <div class="info-item d-flex">
+              <i class="bi bi-phone flex-shrink-0"></i>
+              <div>
+                <h4>Teléfono:</h4>
+                <p>+506 8888 8888</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="250">
+
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Correo electrónico" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Mensaje" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Cargando</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Su mensaje a sido enviado. Gracias!</div>
+              </div>
+              <div class="text-center"><button type="submit">Enviar mensaje</button></div>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <?php include "code/footer.html" ?>
+
+    <div class="footer-content">
+      <div class="container">
+        <div class="row gy-4">
+
+          <div class="col-lg-5 col-md-12 footer-info">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <span style="color: #4b853f">Partido La Gran Nicoya</span>
+            </a>
+            <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+            <div class="social-links d-flex  mt-3">
+              <a href="https://www.facebook.com/SomosLaGranNicoya" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/plagrannicoya/" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="https://www.youtube.com/@PartidoLaGranNicoya" class="youtube"><i class="bi bi-youtube"></i></a>
+              <a href="https://www.tiktok.com/@partido_lagrannicoya" class="youtube"><i class="bi bi-tiktok"></i></a>
+              <!-- <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a> -->
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Enlaces</h4>
+            <ul>
+              <li><i class="bi bi-box-arrow-in-up-right"></i> <a href="#">&nbsp Home</a></li>
+              <li><i class="bi bi-box-arrow-in-up-right"></i> <a href="partido.html"></a>&nbsp Partido</a></li>
+              <li><i class="bi bi-box-arrow-in-up-right"></i> <a href="papeleta.html">&nbsp Papeleta</a></li>
+              <li><i class="bi bi-box-arrow-in-up-right"></i> <a href="lugarvoto.html">&nbsp Dónde voto?</a></li>
+              <li><i class="bi bi-box-arrow-in-up-right"></i> <a href="comite.html">&nbsp Comité Ejecutivo</a></li>
+            </ul>
+          </div>
+          
+          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+            <h4>Contáctenos</h4>
+            <p>
+              Casa Club, 100 mts Oeste y 50 mts Sur<br>
+              de la Casa Cural. Nicoya, Guanacaste<br>
+              Costa Rica <br><br>
+              <strong>Teléfono:</strong> +506 8888 8888<br>
+              <strong>Correo electrónico:</strong> info@lagranicoya.cr<br>
+            </p>
+
+          </div>
+
+          <!-- Google Map location -->
+          
+          <div class="col-lg-2 col-6 footer-links">
+            <div class="mapouter">
+              <div class="gmap_canvas">
+                <iframe width="352" height="219" id="gmap_canvas" 
+                  src="https://maps.google.com/maps?q=casa+club+partido+la+gran+&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+                  frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                <a href="https://textcaseconvert.com/"></a><br>
+                <style>.mapouter{position: relative;text-align: right;height: 219px;width: 352px;}</style>
+                <a href="https://www.embedmaps.co">embed google maps api</a>
+                <style>.gmap_canvas{overflow: hidden;background: none !important;height: 219px;width: 352px;}</style>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      
+    <div class="text-center text-secondary"">
+        <span> Desarrollado por <strong><span>Marco Moreno @ mmoreno.cr@icloud.com</span></strong>. Derechos reservados </span>
+    </div>
+    </div>
+
+    <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-circle-fill"></i></a>
+  </footer>
+
+  <!--  JS Files -->
+  <?php include "code/global_js.html" ?>
+  <!--  JS Files -->
+  <script src="lib/js/global/bootstrap.bundle.min.js"></script>
+  <script src="lib/js/global/aos.js"></script>
+  <script src="lib/js/global/glightbox.min.js"></script>
+  <script src="lib/js/global/swiper-bundle.min.js"></script>
+  <script src="lib/js/global/isotope.pkgd.min.js"></script>
+  <script src="lib/crud/php-email-form/validate.js"></script>
+
+  <!--  Main JS File -->
+  <script src="lib/js/global/main.js"></script>
+
+  <!--  Map JS File -->
+  <script src="lib/js/global/google-map.js"></script>
+
+</body>
+
+</html>
