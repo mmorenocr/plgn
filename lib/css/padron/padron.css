@@ -1,0 +1,15 @@
+.page-item.active .page-link {
+    background-color: red;
+    border: 1px solid gray;
+}
+.page-link {
+    color: red;
+}
+
+.card {
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, .5);
+    box-shadow: 0 0  30px rgba(0, 0, 0, .5);
+    background: transparent;
+    backdrop-filter: blur(70px);
+}
