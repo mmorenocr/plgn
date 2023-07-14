@@ -27,8 +27,9 @@
     -webkit-text-fill-color: transparent; */
 }
 @media (max-width: 767.98px) {
-    .heading-section h2 {
-font-size: 28px; } 
+    .heading-section a {
+        font-size: 28px; 
+    } 
 }
   
 .heading-section.heading-section-white .subheading {
