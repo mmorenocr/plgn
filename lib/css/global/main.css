@@ -529,6 +529,7 @@ section {
     top: 0;
     bottom: 0;
   }
+
 }
 
 .hero:before {
@@ -548,6 +549,12 @@ section {
   }
   .hero p{
     margin-right: 200px;
+  }
+  .hero img{
+    content: url("../../img/Logo_PLGN_2024_2028_white.svg");
+  }
+    /* width: 60%; *
+    background-image: url("../../img/Logo_PLGN_2024_2028_white.svg");
   }
   /* .header .logo{
     margin-left: 50px;
