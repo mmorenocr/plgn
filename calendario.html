@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Gran Nicoya</title>
+    
+    <link href="lib/img/favicon.png" rel="icon">
+
+    <link href="lib/css/global/bootstrap.min.css" rel="stylesheet">
+    <link href="lib/css/global/bootstrap-icons.css" rel="stylesheet">
+    <link href="lib/css/global/main.css" rel="stylesheet">
+
+    <link href="lib/css/calendar/global.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@event-calendar/build@1.5.0/event-calendar.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@event-calendar/build@1.5.0/event-calendar.min.js"></script> 
+
+    <link href="lib/css/global/glightbox.min.css" rel="stylesheet">
+     <!-- Favicons --
+     <link href="lib/img/favicon.png" rel="icon">
+
+     <!--  CSS Files --
+   
+     <link href="lib/css/global/bootstrap.min.css" rel="stylesheet">
+     <link href="lib/css/global/bootstrap-icons.css" rel="stylesheet">
+     <link href="lib/css/global/aos.css" rel="stylesheet">
+     <link href="lib/css/global/glightbox.min.css" rel="stylesheet">
+     <link href="lib/css/global/swiper-bundle.min.css" rel="stylesheet">
+     <link href="lib/css/global/remixicon.css" rel="stylesheet">
+   
+     <!--  Main CSS File --
+   
+     <link href="lib/css/global/main.css" rel="stylesheet">
+     <link href="lib/css/global/addons.css" rel="stylesheet"> -->
+
+</head>
+<body>
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid  d-flex align-items-center justify-content-evenly">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <h1 class="d-flex align-items-center">
+          <span class="text-success">Partido</span> &nbsp;
+          <span class="text-danger">La Gran</span> &nbsp;
+          <span class="text-success">Nicoya</span>
+        </h1>
+      </a>
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html" id="m1">Home</a></li>
+          <li><a href="partido.html" id="m2">Partido</a></li>
+          <li class="dropdown"><a href="papeleta.html" id="m3"><span>Papeleta</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="papeleta.html#alcaldia">Alcaldía</a></li>
+              <li><a href="papeleta.html#regidores">Regidores</a></li>
+              <li><a href="papeleta.html#sindicos">Síndicos</a></li>
+              <li class="dropdown"><a href="#"><span>Consejos de Distrito</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="#">Nicoya</a></li>
+                  <li><a href="#">Mansión</a></li>
+                  <li><a href="#">San Antonio</a></li>
+                  <li><a href="#">Quebrada Honda</a></li>
+                  <li><a href="#">Sámara</a></li>
+                  <li><a href="#">Nosara</a></li>
+                  <li><a href="#">Belén de Nosarita</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="lugarvoto.html" id="m4">Dónde voto?</a></li>
+          <li><a href="comite.html" id="m6">Comité Ejecutivo</a></li>
+          <li><a href="publicaciones.html" id="m7">Publicaciones</a></li>
+          <li class="dropdown"><a href="#" class="active" id="m3"><span>Consultas</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="calendario.html" class="active" >Calendario Elecciones</a></li>
+              <li><a href="miembros.html">Dónde me toca?</a></li>
+            </ul>
+          </li>
+          <li><a href="contacto.html" id="m8">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+    <div class="breadcrumbs d-flex align-items-center" style="background-image: url('lib/img/foto_iglesia.jpg');">
+        <div class="container position-relative d-flex flex-column align-items-center">
+            <h2>Calendario - Elecciones Municipales 2024-2028</h2>
+            <ol>
+                <li><a href="index.html">Home</a></li>
+                <li>Calendario</li>
+            </ol>
+        </div>
+    </div>
+
+    <section id="calendario_tse" class="bg-danger bg-opacity-10" >
+        <div class="container-calendar">
+            <div class="row">
+                <div id="ec" class="col"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+        <?php include "footer.html" ?>
+
+      <div class="footer-content">
+        <div class="container">
+          <div class="row gy-3">
+    
+            <div class="col-lg-4 col-md-12 footer-info">
+              <a href="index.html" class="logo d-flex align-items-center">
+                <span style="color: #4b853f">Partido La Gran Nicoya</span>
+              </a>
+              <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+              <div class="social-links d-flex  mt-3">
+                <a href="https://www.facebook.com/SomosLaGranNicoya" class="facebook"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/plagrannicoya/" class="instagram"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.youtube.com/@PartidoLaGranNicoya" class="youtube"><i class="bi bi-youtube"></i></a>
+                <a href="https://www.tiktok.com/@partido_lagrannicoya" class="youtube"><i class="bi bi-tiktok"></i></a>
+                <!-- <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a> -->
+              </div>
+            </div>
+    
+            <div class="col-lg-2 col-6 footer-links">
+              <h4 style="color: #4b853f">Enlaces</h4>
+              <ul>
+                <li><i class="bi bi-box-arrow-in-up-right"></i> <a href="#" style="color: #c83f2f">&nbsp Home</a></li>
+                <li><i class="bi bi-box-arrow-in-up-right"></i> <a href="partido.html" style="color: #c83f2f">&nbsp Partido</a></li>
+                <li><i class="bi bi-box-arrow-in-up-right"></i> <a href="papeleta.html" style="color: #c83f2f">&nbsp Papeleta</a></li>
+                <li><i class="bi bi-box-arrow-in-up-right"></i> <a href="lugarvoto.html" style="color: #c83f2f">&nbsp Dónde voto?</a></li>
+                <li><i class="bi bi-box-arrow-in-up-right"></i> <a href="comite.html" style="color: #c83f2f">&nbsp Comité Ejecutivo</a></li>
+              </ul>
+            </div>
+            
+            <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+              <h4 style="color: #4b853f">Contáctenos</h4>
+              <p>
+                Casa Club, 100 mts Oeste y 50 mts Sur<br>
+                de la Casa Cural. Nicoya, Guanacaste<br>
+                Costa Rica <br><br>
+                <strong style="color: #4b853f">Teléfono:</strong> +506 8888 8888<br>
+                <strong style="color: #4b853f">Correo electrónico:</strong> info@lagranicoya.cr<br>
+              </p>
+    
+            </div>
+    
+            <!-- Google Map location -->
+            
+            <div class="col-lg-3 col-6 footer-links">
+              <div class="mapouter">
+                <div class="gmap_canvas">
+                  <iframe width="352" height="219" id="gmap_canvas" 
+                    src="https://maps.google.com/maps?q=casa+club+partido+la+gran+&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                  <a href="https://textcaseconvert.com/"></a><br>
+                  <style>.mapouter{position: relative;text-align: right;height: 219px;width: 352px;}</style>
+                  <a href="https://www.embedmaps.co">embed google maps api</a>
+                  <style>.gmap_canvas{overflow: hidden;background: none !important;height: 219px;width: 352px;}</style>
+                </div>
+              </div>
+            </div>
+    
+          </div>
+        </div>
+        
+      <div class="text-center text-secondary"">
+          <span> Desarrollado por <strong><span>Marco Moreno @ mmoreno.cr@icloud.com</span></strong>. Derechos reservados </span>
+      </div>
+      </div>
+    
+      <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-circle-fill"></i></a>
+    </footer>
+
+    <!-- Template Main JS File -->
+    <script src="lib/js/global/main.js"></script>
+    <!-- <script src="lib/js/global/bootstrap.bundle.min.js"></script> -->
+
+</body>
+</html>
+
+<script type="text/javascript">
+
+    let ec = new EventCalendar(document.getElementById('ec'), {
+        view: 'timeGridWeek',
+        height: '800px',
+        headerToolbar: {
+            start: 'prev,next today',
+            center: 'title',
+            end: 'dayGridMonth, timeGridWeek, timeGridDay, listWeek, resourceTimeGridWeek'
+        },
+        buttonText: function (texts) {
+            texts.resourceTimeGridWeek = 'resources';
+            return texts;
+        },
+        resources: [
+            {id: 1, title: 'TSE'},
+            {id: 2, title: 'La Gran Nicoya'}
+        ],
+        scrollTime: '09:00:00',
+        events: createEvents(),
+        views: {
+            timeGridWeek: {pointer: true},
+            resourceTimeGridWeek: {pointer: true}
+        },
+        dayMaxEvents: true,
+        nowIndicator: true,
+        selectable: true
+    });
+
+    function createEvents() {
+        let days = [];
+        for (let i = 0; i < 7; ++i) {
+            let day = new Date();
+            let diff = i - day.getDay();
+            day.setDate(day.getDate() + diff);
+            days[i] = day.getFullYear() + "-" + _pad(day.getMonth()+1) + "-" + _pad(day.getDate());
+        }
+
+        return [
+            {start: days[0] + " 00:00", end: days[0] + " 09:00", resourceId: 1, display: "background"},
+            {start: days[1] + " 12:00", end: days[1] + " 14:00", resourceId: 2, display: "background"},
+            {start: days[2] + " 17:00", end: days[2] + " 24:00", resourceId: 1, display: "background"},
+            {start: days[0] + " 10:00", end: days[0] + " 14:00", resourceId: 1, title: "The calendar can display background and regular events", color: "#FE6B64"},
+            {start: days[1] + " 16:00", end: days[2] + " 08:00", resourceId: 2, title: "An event may span to another day", color: "#B29DD9"},
+            {start: days[2] + " 09:00", end: days[2] + " 13:00", resourceId: 2, title: "Events can be assigned to resources and the calendar has the resources view built-in", color: "#779ECB"},
+            {start: days[3] + " 14:00", end: days[3] + " 20:00", resourceId: 1, title: "", color: "#FE6B64"},
+            {start: days[3] + " 15:00", end: days[3] + " 18:00", resourceId: 1, title: "Overlapping events are positioned properly", color: "#779ECB"},
+            {start: days[5] + " 10:00", end: days[5] + " 16:00", resourceId: 2, titleHTML: "You have complete control over the <i><b>display</b></i> of events…", color: "#779ECB"},
+            {start: days[5] + " 14:00", end: days[5] + " 19:00", resourceId: 2, title: "…and you can drag and drop the events!", color: "#FE6B64"},
+            {start: days[5] + " 18:00", end: days[5] + " 21:00", resourceId: 2, title: "", color: "#B29DD9"},
+            {start: days[1], end: days[3], resourceId: 1, title: "All-day events can be displayed at the top", color: "#B29DD9", allDay: true}
+        ];
+    }
+
+    function _pad(num) {
+        let norm = Math.floor(Math.abs(num));
+        return (norm < 10 ? '0' : '') + norm;
+    }
+
+</script>
